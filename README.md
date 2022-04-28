@@ -3,6 +3,8 @@
 第一步  登录你的GITHUB,然后本页面右上角     Fork
 
 第二步，打开并登录（注册采用你的邮箱，最后需要手机验证)
+
+
 https://veecel.com
 
 第三步，网页翻译后   新建项目   选择GITHUB登录  然后选择你的GITHUB的上面的项目
@@ -18,7 +20,6 @@ https://veecel.com
 https://tts-l6a6j5ajt-1668590371-qqcom.vercel.app/
 
 
+上面的部署方式是人人都可以部署的。
 
-
-
-
+vercel是有流量限制的，自用是基本上够了的
