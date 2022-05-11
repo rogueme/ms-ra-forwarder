@@ -23,3 +23,6 @@ https://tts-l6a6j5ajt-1668590371-qqcom.vercel.app/
 上面的部署方式是人人都可以部署的。
 
 vercel是有流量限制的，自用是基本上够了的
+
+使用教程
+https://.bilibili.com/video/BV125411R79T/
