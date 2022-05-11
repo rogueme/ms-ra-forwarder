@@ -22,7 +22,11 @@ https://tts-l6a6j5ajt-1668590371-qqcom.vercel.app/
 
 上面的部署方式是人人都可以部署的。
 
-vercel是有流量限制的，自用是基本上够了的
+vercel是有流量限制的
+
+vercel免费版    每月100G流量
+
+vercel--14天免费试用版    每月1T   15天差不多500G流量
 
 视频教程
 
