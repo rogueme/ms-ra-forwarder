@@ -37,12 +37,12 @@
         <label for="styleName" class="form-label">讲话风格：</label>
         <div class="input-group">
           <span class="input-group-text">名称</span>
-          <select name="styleName" class="form-select">
+          <select name="styleName" class="form-select" disabled>
           </select>
         </div>
         <div class="input-group">
           <span class="input-group-text">风格强度</span>
-          <input name="styleDegree" class="form-control" type="number" min="0.01" max="2.00" step=".01" value="1.00">
+          <input name="styleDegree" class="form-control" type="number" min="0.01" max="2.00" step=".01" value="1.00" disabled>
           <span class="input-group-text">讲话语速</span>
           <input name="speakSpeed" class="form-control" type="number" min="0" max="100" step="1" value="25">
           <span class="input-group-text">%</span>
@@ -247,11 +247,9 @@
       var ssml = '\
         <speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US">\
           <voice name="'+ voiceName + '">\
-            <mstts:express-as style="'+ styleName + '" styledegree="' + styleDegree + '">\
-              <prosody rate="' + speakSpeed + '%" pitch="0%">\<lang xml:lang="zh-CN">\
+              <prosody rate="' + speakSpeed + '%" pitch="0%">\
                   '+ text + '\
-              </lang>\</prosody >\
-            </mstts:express-as>\
+             </prosody >\
           </voice >\
         </speak > '
 
@@ -288,7 +286,7 @@
           throw '无效的密钥';
         } else {
           console.log(response);
-          throw '未知错误';
+          throw '未知错误:' + response.status;
         }
       })
       .then(arrayBuffer => ctx.decodeAudioData(arrayBuffer))
