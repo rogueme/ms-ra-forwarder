@@ -1,23 +1,29 @@
 {
-  "name": "ms-ra-forwarder",
+  "name": "ms-tts",
   "version": "1.0.0",
   "description": "",
   "main": "",
   "scripts": {
-    "vercel": "vercel",
-    "vercel dev": "vercel dev --debug"
+    "start": "ts-node ./app.ts",
+    "build": "tsc"
   },
   "dependencies": {
-    "@types/websocket": "^1.0.4",
-    "websocket": "^1.0.34"
+    "body-parser": "^1.20.0",
+    "debug": "^4.3.4",
+    "express": "^4.18.1",
+    "log-node": "^8.0.3",
+    "ws": "^8.8.0",
+    "js-base64": "^3.7.2"
   },
-  "author": "Conor",
+  "author": "Cw",
   "license": "ISC",
   "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/express": "^4.17.13",
+    "@types/log": "^6.3.0",
     "@types/node": "^17.0.8",
-    "@vercel/node": "^1.12.1",
+    "@types/ws": "^8.5.3",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.4",
-    "vercel": "^23.1.2"
+    "typescript": "^4.5.4"
   }
 }

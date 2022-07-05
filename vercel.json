@@ -1,7 +1,8 @@
 {
     "routes": [
         {
-            "handle": "filesystem"
+            "src": "/",
+            "dest": "/public"
         }
     ]
 }
